@@ -1,0 +1,25 @@
+title: Ciggen
+description: Ska du *host* ha en cigg eller?
+authors:
+  - Valter Wik
+categories:
+  - crypto
+  - easy
+
+# set the flag_format_prefix to `null` to not use the flag format
+flag_format_prefix: SNHT{
+flags: d0nt_sm0k3_k1ds
+
+downloadable_files:
+  - chall.py
+
+challenge_id: b9eda029-4608-4e03-a023-c128c126d9a5
+spec: 0.0.1
+
+custom:
+  publish: true
+
+human_metadata:
+  event_name: SCSC 2025 Kval
+
+score: 100

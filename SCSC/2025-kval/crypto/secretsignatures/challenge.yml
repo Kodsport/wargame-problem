@@ -1,0 +1,24 @@
+title: secRet SignAtures
+description: Kan du beräkna modulot <code>n</code> och flaggan <code>m</code> från endast signaturer???🤔🤔🤔🤔
+authors:
+  - atzd
+categories:
+  - crypto
+  - hard
+
+# set the flag_format_prefix to `null` to not use the flag format
+flag_format_prefix: SNHT{
+flags: congratulations_now_you_know_LLL_and_approximate_common_divisor.This_is_still_part_of_the_flag:f7a05d8abd85f52cb178999a7b4
+
+downloadable_files:
+  - secret-signatures.py
+
+challenge_id: 7c847d0e-957f-4dde-9eb9-4bc6846472e9
+spec: 0.0.1
+custom:
+  publish: true
+
+human_metadata:
+  event_name: SCSC 2025 Kval
+
+score: 500

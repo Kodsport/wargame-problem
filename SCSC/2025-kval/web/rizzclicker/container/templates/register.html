@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>RizzClicker</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+  </head>
+  <body class="bg-purple-900">
+    <div class="min-h-screen flex items-center justify-center">
+      <div class="bg-purple-800 p-8 rounded-lg shadow-xl w-96">
+        <h1 class="text-4xl font-bold text-center mb-8 text-pink-500">
+          🔥 Register 🔥
+        </h1>
+        <form action="/signup" method="POST" class="space-y-4">
+          <div class="space-y-4">
+            <input
+              type="text"
+              name="name"
+              placeholder="Choose your name"
+              class="w-full p-2 rounded bg-purple-700 text-white placeholder-purple-300 border-2 border-pink-500"
+              required
+            />
+          </div>
+          <button
+            type="submit"
+            class="w-full bg-pink-500 text-white py-2 rounded hover:bg-pink-600 transition"
+          >
+            Start Rizzing
+          </button>
+        </form>
+      </div>
+    </div>
+  </body>
+</html>

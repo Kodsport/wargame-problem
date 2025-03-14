@@ -1,0 +1,24 @@
+title: PySafe
+description: No secrets are getting out of here!
+authors:
+  - Valter Wik
+categories:
+  - reversing
+  - easy
+
+# set the flag_format_prefix to `null` to not use the flag format
+flag_format_prefix: SNHT{
+flags: ctypes+z3=<3
+
+downloadable_files:
+  - pysafe.py
+
+challenge_id: 89eecf8d-a70d-4bcb-ad44-4d187cdf16eb
+spec: 0.0.1
+custom:
+  publish: true
+
+human_metadata:
+  event_name: SCSC 2025 Kval
+
+score: 250

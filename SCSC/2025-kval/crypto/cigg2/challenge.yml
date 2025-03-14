@@ -1,0 +1,24 @@
+title: Ciggen 2
+description: En *host* till *host* cigg... eller? *dör av lungcancer*
+authors:
+  - Valter Wik
+categories:
+  - crypto
+  - medium
+
+# set the flag_format_prefix to `null` to not use the flag format
+flag_format_prefix: SNHT{
+flags: 1_4m_d3d
+
+downloadable_files:
+  - chall.py
+
+challenge_id: f3082943-027e-4335-a05d-901452e8eb8d
+spec: 0.0.1
+custom:
+  publish: true
+
+human_metadata:
+  event_name: SCSC 2025 Kval
+
+score: 100

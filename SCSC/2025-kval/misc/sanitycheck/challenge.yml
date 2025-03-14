@@ -1,0 +1,33 @@
+title: Sanity (rizz) check
+description: We need to check the rizz of our potential SNHT members!
+authors:
+  - SNHT
+categories:
+  - misc
+  - easy
+
+# set the flag_format_prefix to `null` to not use the flag format
+flag_format_prefix: SNHT{
+flags: r1zz_73s7_p4ss3d
+
+service:
+  type: tcp
+  image: container
+  internal_port: 1337
+  external_port: 40042
+  privileged: true
+
+predefined_services:
+  - type: tcp
+    host: 188.126.67.132
+    port: 40042
+
+challenge_id: 63f53f65-9dd4-4cf8-8884-b6cb29ecb620
+spec: 0.0.1
+custom:
+  publish: false
+
+human_metadata:
+  event_name: SCSC 2025 Kval
+
+score: 100

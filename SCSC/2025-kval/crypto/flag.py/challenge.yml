@@ -1,0 +1,24 @@
+title: flag.py
+description: flag.py has stopped responding
+authors:
+  - Valter Wik
+categories:
+  - crypto
+  - hard
+
+# set the flag_format_prefix to `null` to not use the flag format
+flag_format_prefix: SNHT{
+flags: th4t_sur3_t00k_4_wh1l3_huh
+
+downloadable_files:
+  - flag.py
+
+challenge_id: 9aa12db7-5839-44ac-a72b-672ea15cad69
+spec: 0.0.1
+custom:
+  publish: true
+
+human_metadata:
+  event_name: SCSC 2025 Kval
+
+score: 500

@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://unpkg.com/@tailwindcss/browser@4"></script>
+    <title>skärmshot</title>
+    <style>
+      @keyframes neon-pulse {
+        0%,
+        100% {
+          text-shadow: 0 0 7px #ff1177, 0 0 10px #ff1177;
+        }
+        20% {
+          text-shadow: 0 0 40px #ff1177, 0 0 40px #ff1177, 0 0 30px #ff1177;
+        }
+        40% {
+          text-shadow: 0 0 20px #ff1177, 0 0 30px #ff1177;
+        }
+        60% {
+          text-shadow: 0 0 15px #ff1177, 0 0 15px #ff1177, 0 0 40px #ff1177;
+        }
+        80% {
+          text-shadow: 0 0 30px #ff1177, 0 0 60px #ff1177;
+        }
+      }
+
+      .neon-text {
+        animation: neon-pulse 8s ease-in-out infinite;
+      }
+
+      @keyframes border-glow {
+        0%,
+        100% {
+          box-shadow: 0 0 5px #ff1177, 0 0 10px #ff1177;
+        }
+        50% {
+          box-shadow: 0 0 20px #ff1177, 0 0 30px #ff1177;
+        }
+      }
+      .glow-border {
+        animation: border-glow 3s ease-in-out infinite;
+      }
+    </style>
+  </head>
+  <body
+    class="bg-gray-900 text-white min-h-screen p-8 bg-gradient-to-b from-black to-gray-900"
+  >
+    <div class="max-w-3xl mx-auto space-y-8">
+      <h1
+        class="text-6xl font-bold text-pink-500 neon-text transform hover:scale-105 transition-transform duration-300"
+      >
+        skärmshot
+      </h1>
+
+      <div class="flex gap-4">
+        <input
+          type="text"
+          placeholder="https://"
+          class="flex-1 bg-gray-800 border-2 border-pink-500 rounded-lg px-4 py-2 focus:outline-none glow-border hover:bg-gray-700 transition-all duration-300"
+        />
+        <button
+          class="bg-pink-500 hover:bg-pink-600 text-white font-bold py-2 px-6 rounded-lg transition-all duration-300 hover:scale-105 hover:shadow-lg hover:shadow-pink-500/50 transform cursor-pointer"
+          onclick="shot()"
+        >
+          shot🥛
+        </button>
+      </div>
+
+      <p id="info" class="text-pink-400 italic neon-text"></p>
+      <img
+        src="/"
+        class="w-full rounded-lg border-2 border-pink-500 glow-border hidden transform hover:scale-[1.02] transition-all duration-300"
+      />
+    </div>
+
+    <script>
+      async function shot() {
+        try {
+          const url = document.querySelector("input").value;
+          info.innerText = "loading...";
+          const res = await fetch(`/shot?url=${url}`);
+          if (!res.ok) {
+            info.innerText = await res.text();
+            return;
+          }
+          const data = await res.blob();
+          const urlObj = URL.createObjectURL(data);
+          const img = document.querySelector("img");
+          img.src = urlObj;
+          img.classList.remove("hidden");
+          info.innerText = "";
+        } catch (err) {
+          console.error(err);
+        }
+      }
+
+      document.querySelector("input").addEventListener("keydown", (e) => {
+        if (e.key === "Enter") {
+          shot();
+        }
+      });
+    </script>
+  </body>
+</html>

@@ -1,0 +1,24 @@
+title: ClickMe
+description: Simply click me.
+authors:
+  - Martin Wennberg
+categories:
+  - reversing
+  - easy
+
+# set the flag_format_prefix to `null` to not use the flag format
+flag_format_prefix: SNHT{
+flags: jython_4r_13x1k0gr4f15k7_s70rr3_4n_python
+
+downloadable_files:
+  - clickme.jar
+
+challenge_id: e2731750-9d93-4b1c-af48-c90665a51217
+spec: 0.0.1
+custom:
+  publish: true
+
+human_metadata:
+  event_name: SCSC 2025 Kval
+
+score: 100

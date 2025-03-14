@@ -1,0 +1,36 @@
+title: pelinux
+description: bill gates called and said he wanted his pe files back 😓😓
+authors:
+    - Valter Mann
+categories:
+    - pwn
+    - hard
+
+# set the flag_format_prefix to `null` to not use the flag format
+flag_format_prefix: SNHT{
+flags: tls_callbacks_goes_hard
+
+downloadable_files:
+    - dist.tar.gz
+
+service:
+    type: tcp
+    image: container
+    internal_port: 1337
+    external_port: 40103
+    privileged: true
+    
+predefined_services:
+  - type: tcp
+    host: 188.126.67.132
+    port: 40103
+
+challenge_id: 6ee0e497-5730-4a59-b685-6a0891c13ee2
+spec: 0.0.1
+custom:
+  publish: true
+
+human_metadata:
+  event_name: SCSC 2025 Kval
+
+score: 500

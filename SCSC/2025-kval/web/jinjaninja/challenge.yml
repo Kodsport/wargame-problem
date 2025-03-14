@@ -1,0 +1,34 @@
+title: JinjaNinja
+description: Are you powerful enough to become the ninja of jinja?
+authors:
+  - Liam Thorell
+categories:
+  - web
+  - easy
+
+# set the flag_format_prefix to `null` to not use the flag format
+flag_format_prefix: SNHT{
+flags: 1_h3r3by_d3cl4r3_y0u_n1nj4_0f_j1nj4
+
+downloadable_files:
+  - handout.zip
+
+service:
+  type: website
+  image: container
+  internal_port: 5000
+  external_port: 40118
+
+predefined_services:
+  - type: website
+    url: http://188.126.67.132:40118
+
+challenge_id: 04de16ad-4327-4efc-8be6-6c3386ddab07
+spec: 0.0.1
+custom:
+  publish: true
+
+human_metadata:
+  event_name: SCSC 2025 Kval
+
+score: 200

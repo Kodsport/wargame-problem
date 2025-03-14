@@ -1,0 +1,37 @@
+title: Rizz oriented programming
+description: Drop your best game and prove you're a true skibidi rizzler 😈🤑🤪
+authors:
+    - Valter Mann
+categories:
+    - pwn
+    - easy
+
+# set the flag_format_prefix to `null` to not use the flag format
+flag_format_prefix: SNHT{
+flags: uninitialized_variables_are_not_skibidi_rizz
+
+service:
+    type: tcp
+    image: container
+    internal_port: 1337
+    external_port: 40098
+    privileged: true
+
+predefined_services:
+  - type: tcp
+    host: 188.126.67.132
+    port: 40098
+
+downloadable_files:
+    - main.c
+    - chall
+
+challenge_id: 311a3408-d2d1-411f-89b5-14ab509aab0a
+spec: 0.0.1
+custom:
+  publish: true
+
+human_metadata:
+  event_name: SCSC 2025 Kval
+
+score: 200

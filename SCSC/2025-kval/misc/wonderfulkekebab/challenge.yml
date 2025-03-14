@@ -1,0 +1,24 @@
+title: A-a-a Wond-wonderful Ke-kebab
+description: I think my computer has started stuttering!
+authors:
+  - VXN
+categories:
+  - misc
+  - easy
+
+# set the flag_format_prefix to `null` to not use the flag format
+flag_format_prefix: SNHT{
+flags: I_d1dnt_kn0w_c0mput3r5_stutt3r3d
+
+downloadable_files:
+  - chall.bin
+
+challenge_id: 668c8acc-6cee-469f-853f-a162ec5e6a91
+spec: 0.0.1
+custom:
+  publish: true
+
+human_metadata:
+  event_name: SCSC 2025 Kval
+
+score: 100

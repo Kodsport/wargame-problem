@@ -1,0 +1,7 @@
+[profile.default]
+src = 'contracts'
+out = 'out'
+libs = ['lib']
+evm_version = 'cancun'
+remappings = []
+fs_permissions = [{ access = "read", path = "./contracts" }]

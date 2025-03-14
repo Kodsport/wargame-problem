@@ -1,0 +1,43 @@
+title: MinionCoin
+description: i made ts new coin. pls buy! thx. 
+authors:
+  - Liam Thorell
+categories:
+  - misc
+  - hard
+
+# set the flag_format_prefix to `null` to not use the flag format
+flag_format_prefix: SNHT{
+flags: icl_ts_pmo_sm_rn_r_u_fr_rn_lol
+
+deployment:
+  type: docker
+  containers:
+    web:
+      image: ./container
+      services:
+        - type: tcp
+          internal_port: 1337
+          external_port: 40095
+      extra_exposed_ports:
+        - internal_port: 40016
+          external_port: 40016
+
+predefined_services:
+  - type: tcp
+    host: 188.126.67.132
+    port: 40095
+
+downloadable_files:
+  - container/contracts/Coin.sol
+  - container/contracts/Challenge.sol
+
+challenge_id: a7194f0d-4e03-41a2-9bee-45622925b4c3
+spec: 0.0.1
+custom:
+  publish: true
+
+human_metadata:
+  event_name: SCSC 2025 Kval
+
+score: 500

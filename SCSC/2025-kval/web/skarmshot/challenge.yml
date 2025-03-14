@@ -1,0 +1,33 @@
+title: skärmshot
+description: hemsidan som låter en skärm ta en shot
+authors:
+  - Liam Thorell
+categories:
+  - web
+  - hard
+
+flag_format_prefix: SNHT{
+flags: the_skräm_took_too_many_shots_and_cant_walk_now
+
+downloadable_files:
+  - handout.zip
+
+service:
+  type: website
+  image: container
+  internal_port: 3000
+  external_port: 40126
+
+predefined_services:
+  - type: website
+    url: http://188.126.67.132:40126
+
+challenge_id: 23fb8072-bba2-4131-a61f-c17e82f99edc
+spec: 0.0.1
+custom:
+  publish: true
+
+human_metadata:
+  event_name: SCSC 2025 Kval
+
+score: 450

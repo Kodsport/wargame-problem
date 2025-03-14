@@ -1,0 +1,1 @@
+gcc -fPIC -Wl,-z,norelro -s knackmig.c -o knackmig

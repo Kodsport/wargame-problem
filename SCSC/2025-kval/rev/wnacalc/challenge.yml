@@ -1,0 +1,28 @@
+title: WNACALC
+description: |
+  Don't ask me how, because I don't know, but I managed to get a ransomware on my TI-84 Plus CE-T calculator. It's asking me for a decryption password, think you can help me out?
+
+  (the program is safe to run on your favorite calculator)
+authors:
+  - Valter Wik
+categories:
+  - reversing
+  - hard
+
+# set the flag_format_prefix to `null` to not use the flag format
+flag_format_prefix: SNHT{
+flags: GIVEMEMYTHINGSBACK
+
+downloadable_files:
+  - bin/WNACALC.8xp
+  - bin/WNACALC.map
+
+challenge_id: 872ee944-331b-42f0-956a-1731d43fd716
+spec: 0.0.1
+custom:
+  publish: true
+
+human_metadata:
+  event_name: SCSC 2025 Kval
+
+score: 500

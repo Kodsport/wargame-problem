@@ -1,0 +1,29 @@
+import json
+from pathlib import Path
+import os
+import eth_sandbox
+from web3 import Web3
+
+
+def deploy(web3: Web3, deployer_address: str, player_address: str) -> str:
+    rcpt = eth_sandbox.sendTransaction(
+        web3,
+        {
+            "from": deployer_address,
+            "data": json.loads(
+                Path("/home/ctf/compiled/Challenge.sol/Challenge.json").read_text()
+            )["bytecode"]["object"],
+            "value": Web3.to_wei(int(os.environ["ACCOUNT_BALANCE"]), "ether"),
+        },
+    )
+
+    return rcpt.contractAddress
+
+
+eth_sandbox.run_launcher(
+    [
+        eth_sandbox.new_launch_instance_action(deploy),
+        eth_sandbox.new_kill_instance_action(),
+        eth_sandbox.new_get_flag_action(),
+    ]
+)

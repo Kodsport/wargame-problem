@@ -1,0 +1,33 @@
+title: Sourcized
+description: We have this amazing web app where you can write your papers and have an AI check the sources for you.
+authors:
+  - Eliyah Sundström
+categories:
+  - web
+  - hard
+
+flag_format_prefix: SNHT{
+flags: seem5_l1ke_y0u_us3d_an_1nter3st1ng_5our53
+
+downloadable_files:
+  - handout.zip
+
+service:
+  type: website
+  image: container
+  internal_port: 3000
+  external_port: 40128
+
+predefined_services:
+  - type: website
+    url: http://188.126.67.132:40128
+
+challenge_id: 17768de2-644e-42a8-83ac-9dd280c08bcd
+spec: 0.0.1
+custom:
+  publish: true
+
+human_metadata:
+  event_name: SCSC 2025 Kval
+
+score: 450

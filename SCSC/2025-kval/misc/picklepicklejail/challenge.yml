@@ -1,0 +1,36 @@
+title: picklepicklejail
+description: wow i made picklejail in pickle! i hope you like pickle 😊😇
+authors:
+  - Liam Thorell
+categories:
+  - misc
+  - medium
+
+# set the flag_format_prefix to `null` to not use the flag format
+flag_format_prefix: SNHT{
+flags: mmmm_pickles_soo_yummy
+
+service:
+  type: tcp
+  image: container
+  internal_port: 1337
+  external_port: 40090
+  privileged: true
+
+predefined_services:
+  - type: tcp
+    host: 188.126.67.132
+    port: 40090
+
+downloadable_files:
+  - container/jail.py
+
+challenge_id: b556bdc2-fc2b-420a-8baa-6608c69e21f8
+spec: 0.0.1
+custom:
+  publish: true
+
+human_metadata:
+  event_name: SCSC 2025 Kval
+
+score: 500

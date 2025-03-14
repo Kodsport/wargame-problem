@@ -1,0 +1,1 @@
+Install the [CEdev toolchain](https://ce-programming.github.io/toolchain/static/getting-started.html) and then run `make` in this directory to build

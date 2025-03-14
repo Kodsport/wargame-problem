@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>JinjaNinja</title>
+    <script src="https://unpkg.com/@tailwindcss/browser@4"></script>
+    <style>
+      @import url("https://fonts.googleapis.com/css2?family=Oldenburg&display=swap");
+    </style>
+  </head>
+  <body class="bg-black text-red-500 font-[oldenburg]">
+    <div class="container mx-auto px-2">
+      <h2 class="text-6xl mt-8 font-bold">JinjaNinja</h2>
+      <div class="flex flex-col mt-6">
+        <label for="config" class="font-bold">Config</label>
+        <textarea
+          name="config"
+          placeholder='{
+    "give_me_flag": true
+}'
+          id="config"
+          class="w-full h-40 mb-4 border border-red-500 focus:border-red-400 outline-none rounded-md p-2 transition-all duration-300"
+        ></textarea>
+        <label for="template" class="font-bold">Template</label>
+        <textarea
+          name="template"
+          placeholder="<script>alert('pwned')</script>"
+          id="template"
+          class="w-full h-40 mb-4 border border-red-500 focus:border-red-400 outline-none rounded-md p-2 transition-all duration-300"
+        ></textarea>
+      </div>
+      <button
+        onclick="view()"
+        class="bg-red-500 text-black rounded-md px-4 py-2 cursor-pointer hover:bg-red-400 transition-all duration-300"
+      >
+        View!
+      </button>
+    </div>
+    <script>
+      function view() {
+        const config = document.getElementById("config").value || "{}";
+        const template = document.getElementById("template").value;
+        location.href = `${window.origin}/view?config=${encodeURIComponent(
+          config
+        )}&template=${encodeURIComponent(template)}`;
+      }
+    </script>
+  </body>
+</html>

@@ -1,0 +1,21 @@
+<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
+  <% minions.forEach(minion => { %>
+  <div class="bg-white rounded-lg shadow-md p-6">
+    <h2 class="text-2xl font-bold text-blue-600 mb-2"><%= minion.name %></h2>
+    <div>
+      <p class="text-gray-600"><%= minion.description %></p>
+      <p class="text-gray-600">
+        Age:
+        <span><%= minion.age %></span>
+      </p>
+      <div class="mt-4">
+        <a
+          href="/minion/<%= minion.name %>"
+          class="inline-block bg-yellow-300 px-4 py-2 rounded hover:bg-yellow-400"
+          >Inspect Minion</a
+        >
+      </div>
+    </div>
+  </div>
+  <% }); %>
+</div>

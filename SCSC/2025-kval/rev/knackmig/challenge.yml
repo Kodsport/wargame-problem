@@ -1,0 +1,27 @@
+title: Knäckebröd
+description: >
+    Frukost? Husman? Sport? Nejdu, det enda knäckebrödet vi har här är "knäck-mig".
+
+    (kör med ett modernt glibc ifall du får oväntade resultat)
+authors:
+  - Valter Wik
+categories:
+  - reversing
+  - medium
+
+# set the flag_format_prefix to `null` to not use the flag format
+flag_format_prefix: SNHT{
+flags: "v1lk3n_s1Da_sM0r4r_dU_pa_d1Tt_kN4ck3Br0d?"
+
+downloadable_files:
+  - ./knackmig
+
+challenge_id: 513e9d89-0be2-44fd-a77d-339017c1eae0
+spec: 0.0.1
+custom:
+  publish: true
+
+human_metadata:
+  event_name: SCSC 2025 Kval
+
+score: 300

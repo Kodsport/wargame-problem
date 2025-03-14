@@ -1,0 +1,36 @@
+title: Use after snake
+description: me when ormen poppar min shell 💥💥💥💥💣💣💣💣💣 (1:14 That piano 🔥)
+authors:
+    - Martin Wennberg
+categories:
+    - pwn
+    - medium
+
+# set the flag_format_prefix to `null` to not use the flag format
+flag_format_prefix: SNHT{
+flags: det_regnar_flaggor_omg_hej_pwnare
+
+service:
+    type: tcp
+    image: container
+    internal_port: 1337
+    external_port: 40099
+    privileged: true
+
+predefined_services:
+  - type: tcp
+    host: 188.126.67.132
+    port: 40099
+
+downloadable_files:
+    - snake.py
+
+challenge_id: 458a06d3-f265-457a-87bd-b57de421d415
+spec: 0.0.1
+custom:
+  publish: true
+
+human_metadata:
+  event_name: SCSC 2025 Kval
+
+score: 300

@@ -1,0 +1,34 @@
+title: RizzClicker
+description: If only it were that simple...😔
+authors:
+  - Liam Thorell
+categories:
+  - web
+  - easy
+
+# set the flag_format_prefix to `null` to not use the flag format
+flag_format_prefix: SNHT{
+flags: ult1m4t3_r1zz_l0rd
+
+downloadable_files:
+  - handout.zip
+
+service:
+  type: website
+  image: container
+  internal_port: 5000
+  external_port: 40106
+
+predefined_services:
+  - type: website
+    url: http://188.126.67.132:40106
+
+challenge_id: 19db3046-61f4-48a3-9847-ff3e0c654799
+spec: 0.0.1
+custom:
+  publish: true
+
+human_metadata:
+  event_name: SCSC 2025 Kval
+
+score: 100

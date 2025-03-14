@@ -1,0 +1,41 @@
+title: MinionDB
+description: "- How old is Bob?
+<br>- 6.
+<br>- What does Stuart like doing?
+<br>- Play ukulele!
+<br>- What's Kevin's secret?
+<br>- [REDACTED].
+<br>- How do you know all this?
+<br>- MinionDB.
+"
+authors:
+  - Liam Thorell
+categories:
+  - web
+  - medium
+
+flag_format_prefix: SNHT{
+flags: i_love_banananananananananananananananas
+
+downloadable_files:
+  - container/main.js
+
+service:
+  type: website
+  image: container
+  internal_port: 3000
+  external_port: 40120
+
+predefined_services:
+  - type: website
+    url: http://188.126.67.132:40120
+
+challenge_id: 174bba79-e48e-48e9-81cc-2741f3cb00ec
+spec: 0.0.1
+custom:
+  publish: true
+
+human_metadata:
+  event_name: SCSC 2025 Kval
+
+score: 200

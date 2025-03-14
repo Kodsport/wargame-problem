@@ -1,0 +1,24 @@
+title: Dropped flag
+description: Oh, no! I dropped the flag, can you help me put it back?
+authors:
+  - VXN
+categories:
+  - misc
+  - medium
+
+# set the flag_format_prefix to `null` to not use the flag format
+flag_format_prefix: SNHT{
+flags: fil3r_in3håller_m3r_info_än_väntat
+
+downloadable_files:
+  - flag.stl
+
+challenge_id: ef1860ad-1470-4f70-83d6-ae152e2690f8
+spec: 0.0.1
+custom:
+  publish: true
+
+human_metadata:
+  event_name: SCSC 2025 Kval
+
+score: 350

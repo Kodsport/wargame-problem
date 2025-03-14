@@ -1,0 +1,25 @@
+title: b64 2TP
+description: Detta är i princip samma problem som standard one-time pad med en återanvänd nyckel
+authors:
+  - atzd
+categories:
+  - crypto
+  - easy
+
+# set the flag_format_prefix to `null` to not use the flag format
+flag_format_prefix: SNHT{
+flags: b64_puts_a_twist_on_th1s_oth3rw1se_3asy_pr0blem
+
+downloadable_files:
+  - b64_2tp.py
+
+challenge_id: c847f23c-89b1-4ae9-8d36-5a3284edcd28
+spec: 0.0.1
+
+custom:
+  publish: true
+
+human_metadata:
+  event_name: SCSC 2025 Kval
+
+score: 300

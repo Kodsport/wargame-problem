@@ -1,0 +1,38 @@
+title: Heap of Sort
+description: So you know heap-pwning, well, do you know heap pwning?
+authors:
+    - Martin Wennberg
+categories:
+    - pwn
+    - medium
+
+# set the flag_format_prefix to `null` to not use the flag format
+flag_format_prefix: SNHT{
+flags: s74ys_s0r73d_my_h34p
+
+service:
+    type: tcp
+    image: container
+    internal_port: 1337
+    external_port: 40102
+    privileged: true
+
+predefined_services:
+  - type: tcp
+    host: 188.126.67.132
+    port: 40102
+
+downloadable_files:
+    - heapofsort.c
+    - heapofsort
+    - libc.so.6
+
+challenge_id: e1197880-7ce2-4491-9c5a-4b3b458e26b7
+spec: 0.0.1
+custom:
+  publish: true
+
+human_metadata:
+  event_name: SCSC 2025 Kval
+
+score: 350

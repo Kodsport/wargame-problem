@@ -1,0 +1,23 @@
+title: Macrohard
+description: I K S K S K I K ought to be enough for anybody
+authors:
+  - Carl Sundsvall
+categories:
+  - reversing
+  - hard
+
+flag_format_prefix: SNHT{
+flags: I_would_rather_acrobalance
+
+downloadable_files:
+  - main.rs
+
+challenge_id: e5f37542-5d7f-4a66-a3d5-f8c04ebe957a
+spec: 0.0.1
+custom:
+  publish: true
+
+human_metadata:
+  event_name: SCSC 2025 Kval
+
+score: 500
